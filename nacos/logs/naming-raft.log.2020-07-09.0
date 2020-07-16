@@ -1,0 +1,38 @@
+2020-07-09 14:59:21,341 INFO raft peers changed: [Member{address='192.168.86.1:8848'}]
+
+2020-07-09 14:59:21,418 INFO initializing Raft sub-system
+
+2020-07-09 14:59:21,419 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2020-07-09 14:59:21,419 INFO raft notifier started
+
+2020-07-09 14:59:21,424 INFO cache loaded, datum count: 0, current term: 0
+
+2020-07-09 14:59:21,424 INFO finish to load data from disk, cost: 5 ms.
+
+2020-07-09 14:59:21,444 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-07-09 14:59:23,339 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-07-09 14:59:23,392 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+
+2020-07-09 15:07:53,470 INFO raft peers changed: [Member{address='192.168.86.1:8848'}]
+
+2020-07-09 15:07:53,542 INFO initializing Raft sub-system
+
+2020-07-09 15:07:53,542 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2020-07-09 15:07:53,542 INFO raft notifier started
+
+2020-07-09 15:07:53,546 INFO cache loaded, datum count: 0, current term: 0
+
+2020-07-09 15:07:53,546 INFO finish to load data from disk, cost: 4 ms.
+
+2020-07-09 15:07:53,565 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-07-09 15:07:54,323 INFO leader timeout, start voting,leader: {"ip":"192.168.86.1:8848","term":0,"leaderDueMs":15073,"heartbeatDueMs":4500,"state":"FOLLOWER"}, term: 0
+
+2020-07-09 15:07:55,316 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-07-09 15:07:55,371 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+

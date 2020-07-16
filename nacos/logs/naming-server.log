@@ -1,0 +1,20 @@
+2020-07-16 09:11:41,993 INFO creating empty service public:DEFAULT_GROUP@@sakura-cloud-system
+
+2020-07-16 09:11:41,993 INFO [NEW-SERVICE] {"name":"DEFAULT_GROUP@@sakura-cloud-system","protectThreshold":0.0,"groupName":"DEFAULT_GROUP","metadata":{},"finalizeCount":0,"owners":[],"resetWeight":false,"enabled":true,"selector":{"type":"none"},"namespaceId":"public","ipDeleteTimeout":30000,"lastModifiedMillis":1594861901993,"checksum":"13717c2fb63e855febb120f6a5cf643c","clusterMap":{},"empty":true}
+
+2020-07-16 09:11:41,994 WARN cluster: DEFAULT not found, ip: {"instanceId":"192.168.86.1#8080#DEFAULT#DEFAULT_GROUP@@sakura-cloud-system","ip":"192.168.86.1","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sakura-cloud-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1594861901993,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000}, will create new cluster with default configuration.
+
+2020-07-16 09:11:41,994 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sakura-cloud-system, value: {"instanceList":[{"instanceId":"192.168.86.1#8080#DEFAULT#DEFAULT_GROUP@@sakura-cloud-system","ip":"192.168.86.1","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sakura-cloud-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1594861901993,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000}]}
+
+2020-07-16 10:45:22,643 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sakura-cloud-system, value: {"instanceList":[]}
+
+2020-07-16 10:45:49,064 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sakura-cloud-system, value: {"instanceList":[{"instanceId":"192.168.86.1#8080#DEFAULT#DEFAULT_GROUP@@sakura-cloud-system","ip":"192.168.86.1","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sakura-cloud-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1594867549063,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000}]}
+
+2020-07-16 10:47:13,930 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sakura-cloud-system, value: {"instanceList":[]}
+
+2020-07-16 10:48:57,477 INFO [NACOS-RAFT] datum is changed, key: com.alibaba.nacos.naming.iplist.ephemeral.public##DEFAULT_GROUP@@sakura-cloud-system, value: {"instanceList":[{"instanceId":"192.168.86.1#8080#DEFAULT#DEFAULT_GROUP@@sakura-cloud-system","ip":"192.168.86.1","port":8080,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@sakura-cloud-system","metadata":{"preserved.register.source":"SPRING_CLOUD"},"lastBeat":1594867737476,"marked":false,"app":"unknown","instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000}]}
+
+2020-07-16 15:54:15,771 INFO open empty service auto clean job, initialDelay : 50000 ms, period : 30000 ms
+
+2020-07-16 15:54:15,775 INFO listen for service meta change
+

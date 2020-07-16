@@ -1,0 +1,20 @@
+2020-07-16 09:11:41,993 INFO add listener: com.alibaba.nacos.naming.iplist.public##DEFAULT_GROUP@@sakura-cloud-system
+
+2020-07-16 15:54:13,572 INFO raft peers changed: [Member{address='192.168.86.1:8848'}]
+
+2020-07-16 15:54:13,670 INFO initializing Raft sub-system
+
+2020-07-16 15:54:13,671 INFO finish loading all datums, size: 0 cost 0 ms.
+
+2020-07-16 15:54:13,671 INFO raft notifier started
+
+2020-07-16 15:54:13,675 INFO cache loaded, datum count: 0, current term: 0
+
+2020-07-16 15:54:13,675 INFO finish to load data from disk, cost: 5 ms.
+
+2020-07-16 15:54:13,701 INFO timer started: leader timeout ms: 15000, heart-beat timeout ms: 5000
+
+2020-07-16 15:54:15,717 INFO add listener: com.alibaba.nacos.naming.domains.meta.00-00---000-NACOS_SWITCH_DOMAIN-000---00-00
+
+2020-07-16 15:54:15,775 INFO add listener: com.alibaba.nacos.naming.domains.meta.
+

@@ -1,0 +1,156 @@
+2020-07-13 14:37:21,576 INFO Starting Nacos on DESKTOP-S5S6P3I with PID 16548 (F:\WorkProjectAny\Idea\Gziscas\sakura-cloud\nacos\distribution\target\nacos-server-1.3.0-BETA\nacos\target\nacos-server.jar started by 白月初 in F:\WorkProjectAny\Idea\Gziscas\sakura-cloud\nacos\distribution\target\nacos-server-1.3.0-BETA\nacos\bin)
+
+2020-07-13 14:37:21,582 INFO The following profiles are active: standalone
+
+2020-07-13 14:37:35,362 INFO Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$cd5406fd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-07-13 14:37:35,972 INFO Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-07-13 14:37:35,991 INFO Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@35399441' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-07-13 14:37:35,992 INFO Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$f228a9af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-07-13 14:37:36,032 INFO Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+2020-07-13 14:37:38,926 INFO Tomcat initialized with port(s): 8848 (http)
+
+2020-07-13 14:37:39,085 INFO Starting service [Tomcat]
+
+2020-07-13 14:37:39,085 INFO Starting Servlet Engine: Apache Tomcat/9.0.13
+
+2020-07-13 14:37:39,146 INFO The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [H:\java\jdk-8u201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;H:\python\python36\Scripts\;H:\python\python36\;F:\app\oracle12\product\12.2.0\dbhome_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;H:\redis\;H:\puttyy\;H:\tortoiseGit\bin;H:\Git\cmd;H:\TortoiseSVN\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;H:\nodejs\;H:\apache-maven-3.5.4bin;H:\java\jdk-8u201\bin;H:\java\jdk-8u201\jre\bin;C:\Users\EarlyWhite\AppData\Local\Microsoft\WindowsApps;H:\nodejs\node_global;C:\Program Files\Bandizip\;H:\python\python36\Scripts\;H:\apache-maven-3.5.4\bin;H:\IntelliJ IDEA 2020.1.2\bin;;H:\Microsoft VS Code\bin;H:\WebStorm 2020.1.1\bin;;H:\PyCharm 2020.1.1\bin;;H:\DataGrip 2020.1.4\bin;;.]
+
+2020-07-13 14:37:39,955 INFO Initializing Spring embedded WebApplicationContext
+
+2020-07-13 14:37:39,955 INFO Root WebApplicationContext: initialization completed in 18033 ms
+
+2020-07-13 14:37:41,085 INFO Use Mysql as the driver
+
+2020-07-13 14:37:41,222 INFO HikariPool-1 - Starting...
+
+2020-07-13 14:37:41,891 INFO HikariPool-1 - Start completed.
+
+2020-07-13 14:37:44,237 INFO Nacos-related cluster resource initialization
+
+2020-07-13 14:37:44,258 INFO The cluster resource is initialized
+
+2020-07-13 14:37:45,622 INFO Reflections took 170 ms to scan 1 urls, producing 6 keys and 24 values 
+
+2020-07-13 14:37:45,768 INFO Reflections took 5 ms to scan 1 urls, producing 2 keys and 12 values 
+
+2020-07-13 14:37:45,799 INFO Reflections took 6 ms to scan 1 urls, producing 3 keys and 15 values 
+
+2020-07-13 14:37:49,317 INFO Initializing ExecutorService 'applicationTaskExecutor'
+
+2020-07-13 14:37:49,760 INFO Adding welcome page: class path resource [static/index.html]
+
+2020-07-13 14:37:51,846 INFO Creating filter chain: Ant [pattern='/**'], []
+
+2020-07-13 14:37:52,103 INFO Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1df98368, org.springframework.security.web.context.SecurityContextPersistenceFilter@200a26bc, org.springframework.security.web.header.HeaderWriterFilter@1f130eaf, org.springframework.security.web.csrf.CsrfFilter@27cf3151, org.springframework.security.web.authentication.logout.LogoutFilter@4628b1d3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b5bc39d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34abdee4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@21ca139c, org.springframework.security.web.session.SessionManagementFilter@21362712, org.springframework.security.web.access.ExceptionTranslationFilter@5910de75]
+
+2020-07-13 14:37:52,727 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+
+2020-07-13 14:37:52,800 INFO Initializing ExecutorService 'taskScheduler'
+
+2020-07-13 14:37:53,274 INFO Tomcat started on port(s): 8848 (http) with context path '/nacos'
+
+2020-07-13 14:37:53,496 INFO Started Nacos in 37.14 seconds (JVM running for 39.735)
+
+2020-07-13 14:37:53,496 INFO Nacos Log files: F:\WorkProjectAny\Idea\Gziscas\sakura-cloud\nacos\distribution\target\nacos-server-1.3.0-BETA\nacos\logs
+
+2020-07-13 14:37:53,499 INFO Nacos Log files: F:\WorkProjectAny\Idea\Gziscas\sakura-cloud\nacos\distribution\target\nacos-server-1.3.0-BETA\nacos\conf
+
+2020-07-13 14:37:53,499 INFO Nacos Log files: F:\WorkProjectAny\Idea\Gziscas\sakura-cloud\nacos\distribution\target\nacos-server-1.3.0-BETA\nacos\data
+
+2020-07-13 14:37:53,500 INFO Nacos started successfully in stand alone mode. use external storage
+
+2020-07-13 14:40:58,324 INFO Initializing Spring DispatcherServlet 'dispatcherServlet'
+
+2020-07-13 14:40:58,325 INFO Initializing Servlet 'dispatcherServlet'
+
+2020-07-13 14:40:58,340 INFO Completed initialization in 15 ms
+
+2020-07-13 14:47:46,675 INFO [capacityManagement] start correct usage
+
+2020-07-13 14:47:46,865 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 14:47:46,937 WARN clearConfigHistory start
+
+2020-07-13 14:57:46,867 INFO [capacityManagement] start correct usage
+
+2020-07-13 14:57:46,868 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 14:57:46,953 WARN clearConfigHistory start
+
+2020-07-13 15:07:46,869 INFO [capacityManagement] start correct usage
+
+2020-07-13 15:07:46,871 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 15:07:46,958 WARN clearConfigHistory start
+
+2020-07-13 15:17:46,873 INFO [capacityManagement] start correct usage
+
+2020-07-13 15:17:46,877 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 15:17:46,965 WARN clearConfigHistory start
+
+2020-07-13 15:27:46,878 INFO [capacityManagement] start correct usage
+
+2020-07-13 15:27:46,882 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 15:27:46,968 WARN clearConfigHistory start
+
+2020-07-13 15:37:46,884 INFO [capacityManagement] start correct usage
+
+2020-07-13 15:37:46,887 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 15:37:46,973 WARN clearConfigHistory start
+
+2020-07-13 15:47:46,889 INFO [capacityManagement] start correct usage
+
+2020-07-13 15:47:46,890 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 15:47:46,977 WARN clearConfigHistory start
+
+2020-07-13 15:57:46,891 INFO [capacityManagement] start correct usage
+
+2020-07-13 15:57:46,892 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 15:57:46,981 WARN clearConfigHistory start
+
+2020-07-13 16:07:46,894 INFO [capacityManagement] start correct usage
+
+2020-07-13 16:07:46,897 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 16:07:46,983 WARN clearConfigHistory start
+
+2020-07-13 16:17:46,899 INFO [capacityManagement] start correct usage
+
+2020-07-13 16:17:46,899 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 16:17:46,988 WARN clearConfigHistory start
+
+2020-07-13 16:27:46,901 INFO [capacityManagement] start correct usage
+
+2020-07-13 16:27:46,906 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 16:27:46,998 WARN clearConfigHistory start
+
+2020-07-13 16:37:46,909 INFO [capacityManagement] start correct usage
+
+2020-07-13 16:37:46,910 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 16:37:47,006 WARN clearConfigHistory start
+
+2020-07-13 16:47:46,911 INFO [capacityManagement] start correct usage
+
+2020-07-13 16:47:46,912 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 16:47:47,008 WARN clearConfigHistory start
+
+2020-07-13 16:57:46,914 INFO [capacityManagement] start correct usage
+
+2020-07-13 16:57:46,915 INFO [capacityManagement] end correct usage, cost: 0s
+
+2020-07-13 16:57:47,014 WARN clearConfigHistory start
+
