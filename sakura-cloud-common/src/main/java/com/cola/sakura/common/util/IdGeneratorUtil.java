@@ -10,7 +10,7 @@ package com.cola.sakura.common.util;
  * @Description:
  */
 
-public class IdGenerator {
+public class IdGeneratorUtil {
     //开始时间戳（不能修改，会影响唯一性)
     //2020-7-1
     private static final long twepoch = 1293570344482L;
@@ -41,10 +41,10 @@ public class IdGenerator {
     //上次生成Id的时间戳
     private static long lastTimestamp = -1L;
     //初始化参数
-    private static IdGenerator idGenerator;
+    private static IdGeneratorUtil idGeneratorUtil;
 
     static {
-        idGenerator = new IdGenerator();
+        idGeneratorUtil = new IdGeneratorUtil();
     }
 
     /**
@@ -53,7 +53,7 @@ public class IdGenerator {
      * @return long
      */
     public static synchronized long getLongId() {
-        return IdGenerator.getNextId();
+        return IdGeneratorUtil.getNextId();
     }
     /**
      * @desc 返回String类型id
@@ -61,12 +61,12 @@ public class IdGenerator {
      * @return java.lang.String
      */
     public static synchronized String getStringId() {
-        return String.valueOf(IdGenerator.getNextId());
+        return String.valueOf(IdGeneratorUtil.getNextId());
     }
 
-    private IdGenerator() {
-        IdGenerator.workerId = workerId & maxWorkerId;
-        IdGenerator.dataCenterId = dataCenterId & maxDataCenterId;
+    private IdGeneratorUtil() {
+        IdGeneratorUtil.workerId = workerId & maxWorkerId;
+        IdGeneratorUtil.dataCenterId = dataCenterId & maxDataCenterId;
     }
 
     /**
