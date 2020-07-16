@@ -49,10 +49,6 @@ public class AbstractBaseDTO implements Serializable {
      * 数据来源
      */
     private String dataSource;
-    /**
-     * 状态
-     */
-    private Integer status = StatusEnum.NORMAL.getValue();
 
     public String getObjectModifierId() {
         return objectModifierId;
@@ -118,14 +114,6 @@ public class AbstractBaseDTO implements Serializable {
         this.dataSource = dataSource;
     }
 
-    public Integer getStatus() {
-        return status;
-    }
-
-    public void setStatus(Integer status) {
-        this.status = status;
-    }
-
     @Override
     public String toString() {
         return "AbstractBaseEntity{" +
@@ -137,7 +125,6 @@ public class AbstractBaseDTO implements Serializable {
                 ", objectModifierName='" + objectModifierName + '\'' +
                 ", objectModificationTime=" + objectModificationTime +
                 ", dataSource='" + dataSource + '\'' +
-                ", status=" + status +
                 '}';
     }
 }

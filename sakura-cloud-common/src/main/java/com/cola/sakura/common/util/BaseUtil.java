@@ -25,13 +25,13 @@ public class BaseUtil {
 
     private static final Log logger = LogFactory.get();
 
+    private static String[] ignoreProperties = {"id", "ownerId", "ownerName", "objectCreateTime", "objectModifierId", "objectModifierName","objectModificationTime","dataSource","status"};
+
     /**
-     * @param source
-     * @param clazz
-     * @return
-     * @throws IllegalAccessException
-     * @throws InstantiationException
-     */
+     * @Description: 复制列表元素
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static <T> List<T> copyList(List<?> source, Class<T> clazz) {
         if (source == null || source.size() == 0) {
             return new ArrayList<>();
@@ -49,6 +49,11 @@ public class BaseUtil {
         return res;
     }
 
+    /**
+     * @Description: 复制属性
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static <T> T copyProperties(Object source, Class<T> clazz) {
         T t = null;
         try {
@@ -60,8 +65,12 @@ public class BaseUtil {
         return t;
     }
 
+    /**
+     * @Description: 复制属性，忽略指定属性
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static <T> T copyProperties(Object source, Class<T> clazz, String... ignoreProperties) {
-        ignoreProperties = new String[] {"a", "b", "c"};
         T t = null;
         try {
             t = clazz.newInstance();
@@ -72,6 +81,11 @@ public class BaseUtil {
         return t;
     }
 
+    /**
+     * @Description: 复制属性
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static void copyProperties(Object source, Object t) {
         try {
             BeanUtil.copyProperties(source, t);
@@ -80,6 +94,11 @@ public class BaseUtil {
         }
     }
 
+    /**
+     * @Description: 复制属性，忽略指定属性
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static void copyProperties(Object source, Object t, String... ignoreProperties) {
         try {
             BeanUtil.copyProperties(source, t, ignoreProperties);
@@ -88,7 +107,11 @@ public class BaseUtil {
         }
     }
 
-
+    /**
+     * @Description: 复制属性，忽略空值
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static void copyIgnoreNull(Object source, Object target) {
         try {
             BeanUtil.copyProperties(source,target,CopyOptions.create().setIgnoreNullValue(true));
@@ -96,7 +119,11 @@ public class BaseUtil {
             logger.error("copyBean error", e);
         }
     }
-
+    /**
+     * @Description: 复制属性，忽略空值
+     * @Author cola
+     * @Date 2020/7/16 17:19
+     **/
     public static <T> T copyIgnoreNull(Object source, Class<T> clazz) {
         T t = null;
         try {

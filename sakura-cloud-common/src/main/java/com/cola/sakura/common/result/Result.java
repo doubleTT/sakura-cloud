@@ -51,7 +51,7 @@ public class Result {
 
     public static com.cola.sakura.common.result.Result fail(String message) {
         com.cola.sakura.common.result.Result result = new com.cola.sakura.common.result.Result();
-        result.setCode(ResultEnum.FAIL.getValue());
+        result.setCode(ResultEnum.ERROR.getValue());
         result.setMessage(message);
         return result;
     }
