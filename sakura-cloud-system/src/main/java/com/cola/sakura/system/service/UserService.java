@@ -14,9 +14,9 @@ import com.cola.sakura.system.query.UserQuery;
 
 public interface UserService {
     /**
-     * 用户登录
-     * @param criteria
-     * @return
-     */
+     * @Description 用户登录
+     * @Author cola
+     * @Date 2020/7/16 17:18
+     **/
     Result userLogin(UserQuery criteria);
 }

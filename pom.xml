@@ -101,7 +101,6 @@
     </build>
 
     <modules>
-        <module>nacos</module>
         <module>sakura-cloud-redis</module>
         <module>sakura-cloud-common</module>
         <module>sakura-cloud-system</module>

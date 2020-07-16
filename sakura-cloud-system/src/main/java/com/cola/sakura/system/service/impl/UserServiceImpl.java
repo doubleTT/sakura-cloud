@@ -28,6 +28,11 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private SysUserMapper sysUserMapper;
 
+    /**
+     * @Description: 用户登录
+     * @Author cola
+     * @Date 2020/7/16 18:43
+     **/
     @Override
     public Result userLogin(UserQuery criteria) {
         List<SysUser> sysUsers = sysUserMapper.selectList(null);

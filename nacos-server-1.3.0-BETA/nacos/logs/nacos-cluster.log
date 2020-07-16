@@ -1,6 +1,0 @@
-2020-07-15 16:48:38,041 INFO Current addressing mode selection : StandaloneMemberLookup
-
-2020-07-15 16:48:38,056 WARN [serverlist] updated to : [Member{address='192.168.86.1:8848'}]
-
-2020-07-15 16:48:51,334 INFO This node is ready to provide external services
-
