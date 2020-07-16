@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <!-- 数据库驱动:选择你的本地硬盘上面的数据库驱动包-->
+    <classPathEntry location="F:\WorkProjectAny\Idea\Gziscas\monitorPortal\jar\ojdbc6-11.2.0.3.jar"/>
+<!--    <classPathEntry location="C:\Users\maoli\.m2\report\com\oracle\ojdbc7\12.1.0.2\ojdbc7-12.1.0.2.jar"/>-->
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- Mapper注解 -->
+        <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin" />
+        <!-- JavaBean 实现 序列化 接口 -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+        <!-- 生成toString -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+        <!-- optional，旨在创建class时，对注释进行控制 -->
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+        <!--数据库链接URL，用户名、密码 -->
+        <jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
+                        connectionURL="jdbc:oracle:thin:@//10.0.225.10:1522/blfy"
+                        userId="adrdb"
+                        password="adrdb_2020">
+        </jdbcConnection>
+        <!-- 类型转换 -->
+        <javaTypeResolver >
+            <!-- 是否使用bigDecimal,
+                false: 把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer(默认)
+                true:  把JDBC DECIMAL 和 NUMERIC 类型解析为java.math.BigDecimal
+            -->
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+        <!-- 生成模型的包名和位置-->
+        <javaModelGenerator targetPackage="cn.ac.iscas.gz.redis.model" targetProject="src/main/java">
+            <!-- 默认false 是否允许子包 -->
+            <property name="enableSubPackages" value="true" />
+            <!-- 默认false 是否对model添加 构造函数 -->
+            <property name="constructorBased" value="false"/>
+            <!-- 默认false 建立的Model对象是否 不可改变  即生成的Model对象不会有 setter方法，只有构造方法 -->
+            <property name="immutable" value="false"/>
+            <!-- 默认false 是否对类CHAR类型的列的数据进行trim操作 -->
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="mapper" targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"/>
+        </sqlMapGenerator>
+        <!-- 生成DAO的包名和位置-->
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.ac.iscas.gz.redis.dao" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+        </javaClientGenerator>
+        <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
+
+<!--        <table tableName="ISCAS_REPORTADR_DICTIONARY" domainObjectName="ReportAdrDictionary" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <columnOverride column="ID" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="SORT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_RUMOR_DETAIL" domainObjectName="RumorDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_RUMOR_STAT" domainObjectName="RumorStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_SECURITY_DETAIL" domainObjectName="SecutiryDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_SECURITY_STAT" domainObjectName="SecurityStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANALY_EVA_DETAIL" domainObjectName="AnalyEvaDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISRISK" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISONSUBMIT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANALY_EVALUATIO_STAT" domainObjectName="AnalyEvaluatioStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANNUAL_REPORT" domainObjectName="AnnualReport" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISSUBMIT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANNUAL_REPORT_IMPROVE" domainObjectName="AnnualReportImprove" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="NEED_OR_READY" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_REPORTADR_DICTIONARY" domainObjectName="ReportAdrDictionary" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <columnOverride column="ID" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="SORT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_RUMOR_DETAIL" domainObjectName="RumorDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_RUMOR_STAT" domainObjectName="RumorStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_SECURITY_DETAIL" domainObjectName="SecutiryDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISACS_SECURITY_STAT" domainObjectName="SecurityStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANALY_EVA_DETAIL" domainObjectName="AnalyEvaDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISRISK" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISONSUBMIT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANALY_EVALUATIO_STAT" domainObjectName="AnalyEvaluatioStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANNUAL_REPORT" domainObjectName="AnnualReport" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISSUBMIT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANNUAL_REPORT_IMPROVE" domainObjectName="AnnualReportImprove" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_REPORTADR_DICTIONARY" domainObjectName="ReportAdrDictionary" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <columnOverride column="ID" javaType="java.lang.Long"/>-->
+<!--            <columnOverride column="SORT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_RUMOR_DETAIL" domainObjectName="RumorDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true">-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_RUMOR_STAT" domainObjectName="RumorStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_SECURITY_DETAIL" domainObjectName="SecutiryDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_SECURITY_STAT" domainObjectName="SecurityStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANALY_EVA_DETAIL" domainObjectName="AnalyEvaDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_RISK" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_ON_SUBMIT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANALY_EVALUATIO_STAT" domainObjectName="AnalyEvaluatioStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANNUAL_REPORT" domainObjectName="AnnualReport" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_SUBMIT" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ANNUAL_REPORT_IMPROVE" domainObjectName="AnnualReportImprove" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+
+<!--        <table tableName="ISCAS_DRUG_HOLDER_INFO" domainObjectName="DrugHolderInfo" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_CHANGE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+
+<!--        <table tableName="ISCAS_DRUG_INFO_CHANGE_SIT" domainObjectName="DrugInfoChangeSit" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_UPDATE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_DRUG_INFO_SALE_SIT" domainObjectName="DrugInfoSaleSit" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_PROUDCT" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_EXIT" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_SALE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_DRUG_INFO_STAT" domainObjectName="DrugInfoStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISCHANGE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+
+<!--        <table tableName="ISCAS_DRUG_INFO_STAT" domainObjectName="DrugInfoStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="ISCHANGE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+
+<!--        <table tableName="ISCAS_DRUG_INFO_STAT" domainObjectName="DrugInfoStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_CHANGE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+
+<!--        <table tableName="ISCAS_DRUG_WARNING_SYSTEM" domainObjectName="DrugWarningSystem" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_HEAD" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_INS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_REG_IME" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_CHECK" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_ENTRUST" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IMPROVE_WAY" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_IMPROVE" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_GUARANTEE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_DRUG_AR_REPORT" domainObjectName="DrugArReport" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_ENTRUST_WORK_SITUATION" domainObjectName="EntrustWorkSituation" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_OVE_REPORT_DEATIL" domainObjectName="OveReportDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_OVE_REPORT_STAT" domainObjectName="OveReportStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_UPLOADFILE_LIST" domainObjectName="UploadFileList" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_USER_REGINFO_CHANGE" domainObjectName="UserReginfoChange" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            <columnOverride column="IS_UPDATE" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_WITHIN_INFO_COLLECT_WAY" domainObjectName="WithinInfoCollectWay" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_WITHIN_REPORT_DETAIL" domainObjectName="WithinReportDetail" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--        <table tableName="ISCAS_WITHIN_REPORT_STAT" domainObjectName="WithRerportStat" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--            <table tableName="ISCAS_RELATION_UPLOADFILE" domainObjectName="RelationUploadfile" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--                <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            </table>-->
+<!--        <table tableName="ISCAS_DRUG_WARNING_SYSTEM_ENTRUST" domainObjectName="WarningSystemEntrust" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--            <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--        </table>-->
+<!--            <table tableName="ISCAS_DRUG_WARNING_SYSTEM_MANAGE" domainObjectName="DrugWarningSystemManage" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >-->
+<!--                <columnOverride column="STATUS" javaType="java.lang.Integer"/>-->
+<!--            </table>-->
+<!--        <table tableName="V_ORG_USERINFO_QY" domainObjectName="OrgUserInfoQy" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true"/>-->
+
+                    <table tableName="ISCAS_BASEDATA_COUNTRY_REGION" domainObjectName="CountryRegion" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" >
+                        <columnOverride column="STATUS" javaType="java.lang.Integer"/>
+                    </table>
+
+    </context>
+</generatorConfiguration>
