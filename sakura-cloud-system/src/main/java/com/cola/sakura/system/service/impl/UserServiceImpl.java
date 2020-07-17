@@ -2,6 +2,7 @@ package com.cola.sakura.system.service.impl;
 
 import cn.hutool.core.bean.BeanUtil;
 import com.cola.sakura.common.result.Result;
+import com.cola.sakura.common.util.DataResultUtil;
 import com.cola.sakura.system.dao.SysUserMapper;
 import com.cola.sakura.system.entity.SysUser;
 import com.cola.sakura.system.query.UserQuery;
@@ -39,6 +40,6 @@ public class UserServiceImpl implements UserService {
         for (SysUser sysUser : sysUsers) {
             log.info(sysUser.toString());
         }
-        return null;
+        return DataResultUtil.success();
     }
 }
